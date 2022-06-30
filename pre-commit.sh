@@ -16,7 +16,7 @@ get_pattern_files() {
 CHANGED_FILES=$(git diff --name-only --cached --diff-filter=ACMR)
 
 # Get all changed python files
-SPEC_FILES=$(get_pattern_files *spec.rb)
+SPEC_FILES=$(get_pattern_files spec.rb)
 
 if [[ -n "$CHANGED_FILES" ]]
 then
