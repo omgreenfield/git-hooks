@@ -15,7 +15,7 @@ get_pattern_files() {
 # Compute the diff only once to save a small amount of time.
 CHANGED_FILES=$(git diff --name-only --cached --diff-filter=ACMR)
 
-# Get all changed python files
+# Checks all files with spec.rb
 SPEC_FILES=$(get_pattern_files spec.rb)
 
 if [[ -n "$CHANGED_FILES" ]]
